@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500;900&family=Roboto:wght@100;300;400;500;700;900&family=Secular+One&display=swap");
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Secular One', sans-serif; */
+:root {
+  --primary: #d1a296;
+  --primary-dark: #cf8d7d;
+  --secondary: white;
+  --dark: #333;
+  --light: #f4f4f4;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utils */
+.px-2 {
+    padding: 2rem 0 ;
+}
+.py-2 {
+    padding: 0 2rem;
+}
+.py-3 {
+    padding: 0 3rem;
+}
+.py-4 {
+    padding: 0 4rem;
+}
+.p-2 {
+    padding: 2rem;
+}
+.p-3 {
+    padding: 3rem;
+}
+.p-4 {
+    padding: 4rem;
+}
+.mt-2 {
+margin-top: 2rem;
+}
+.mt-1 {
+margin-top: 1rem;
+}
+.bg-dark {
+    background-color: var(--dark);
+}
+.bg-primary {
+    background-color: var(--primary);
+}
+.primary-color {
+    color: var(--primary);
+}
+.btn {
+padding: 1rem 2rem;
+background-color: var(--primary);
+border-radius: 0.5rem;
+font-size: 1.5rem;
+}
+.btn:hover {
+    background-color: var(--primary-dark);
+}
+.btn-dark {
+padding: 1rem 6rem;
+background-color: var(--dark);
+color: var(--secondary);
+border-radius: 0.5rem;
+font-size: 1.5rem;
+border: none;
+}
+.btn-dark:hover {
+    background-color: rgb(63, 62, 62)
+}
+.heading-l {
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    padding: 0 1.1rem;
+    line-height: 1.1;
+}
+.heading-l {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  justify-content: space-between;
+  background-color: var(--light);
+  color: var(--primary);
+  opacity: 0.8;
+  box-shadow: 0px 1px 20px var(--dark);
+  position: sticky;
+  top: 0;
+}
+#navbar h1 {
+    font-weight: 400;
+  font-size: 2.5rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  white-space: nowrap;
+  font-size: 1.5rem;
+}
+#navbar ul li a{
+  padding: 1rem 1.5rem;
+  margin: 0rem 1rem;
+}
+#navbar ul li a:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border-radius: 1.5rem;
+}
+#hero {
+    color: var(--light);
+    background: url(../img/hero.jpg) no-repeat center center / cover;
+    height: 96vh;
+    text-align: center;
+    padding-top:10rem;
+}
+#hero #hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero h1 {
+    text-shadow: 0 0.5rem 2rem var(--dark);
+}
+#hero p {
+    margin: 2rem;
+    font-size: 1.5rem;
+    max-width: 60rem;
+
+}
+
+#treatment {
+    text-align: center;
+    padding: 5rem;
+    background-color: var(--light);
+    color: var(--dark);
+}
+#treatment h1 {
+font-size: 4rem;
+font-weight: 600;
+margin-bottom: 3rem;
+}
+#treatment .items {
+display: flex;
+padding: 3rem;
+font-size: 1.5rem;
+overflow: hidden;
+}
+#treatment i {
+    padding: 1.1rem;
+    background-color: var(--primary);
+    color: var(--light);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+#treatment h3 {
+    padding: 0 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+#team {
+    display: flex;
+}
+#team div {
+    flex: 1;
+}
+#team .team-img {
+    background: url(../img/team.jpeg) no-repeat center center / cover;
+    min-height: 40vh;
+}
+#team .team-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    text-align: center;
+    color: var(--light);
+    line-height: 1.8;
+}
+#team p {
+    font-size: 1.6rem;
+}
+#team h2 {
+font-weight: 500;
+font-size: 5rem;
+margin-top: 6rem;
+}
+#client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#client .client-imgs {
+    display: flex;
+    justify-content: space-between;
+}
+#client .client-img {
+    max-width: 10%;
+}
+#client h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#contact {
+    display: flex;
+}
+#contact .form-group {
+    width: 30vw;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    line-height: 1.5;
+}
+#contact p {
+    font-size: 1.5rem;
+}
+#label {
+    padding: 1rem 0;
+    margin: 2rem 0;
+}
+#contact input, #contact textarea {
+    display: block;
+    flex: 1;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+}
+#contact button {
+    width : 100%;
+}
+#footer {
+    text-align: center;
+    color: var(--secondary);
+}
